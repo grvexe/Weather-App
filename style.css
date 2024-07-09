@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(220.55deg, #FF3F3F 0%, #063CFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-top: 3rem;
+    max-width: 400px;
+    max-height: 650px;
+    line-height: 100%;
+
+    border-radius: 25px;
+    
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 4px 4px 25px rgba(255, 255, 255, 0.5);
+    box-shadow: inset -4px -4px 25px rgba(255, 255, 255, 0.5);
+
+    background: linear-gradient(225deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%);
+
+    backdrop-filter: blur(25px);
+}
+
+.weatherForm {
+    margin-top: 2%;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.weatherForm input {
+    width: 275px;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding-left: 1.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.weatherForm input::placeholder {
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.weatherForm button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-size: 1.25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.weatherForm button:hover{
+    background-color: #eeeeee;
+}
+
+.displayCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.temperature{
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.minMax{
+    font-size: 1.75rem;
+    margin-bottom: -0.5rem;
+}
+
+.weatherEmoji{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.description{
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+}
+
+.city{
+    font-size: 2.25rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.humidityDetails {
+    display: grid;
+    grid-template-areas:
+    "icon value"
+    "icon title";  
+    column-gap: 1.25rem;
+}
+
+.humidityEmoji {
+    font-size: 2.5rem;
+    grid-area: icon;
+}
+
+.humidityPercent {
+    font-size: 1.75rem;
+    font-weight: 600;
+    grid-area: value;
+    margin-bottom: -0.5rem;
+}
+
+.humidityTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    grid-area: title;
+}
+
+.windDetails {
+    display: grid;
+    grid-template-areas:
+    "icon value"
+    "icon title";
+    column-gap: 1.25rem;
+}
+
+.windEmoji {
+    font-size: 2.5rem;
+    grid-area: icon;
+}
+
+.windSpeed {
+    font-size: 1.75rem;
+    font-weight: 600;
+    grid-area: value;
+    margin-bottom: -0.5rem;
+}
+
+.windSpeedTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    grid-area: title;
+}
+
+
+
