@@ -1,4 +1,4 @@
-const apiKey = '98b37979365a0884bbd96c5fdc84f0ee';
+const apiKey = '#############################';
 const weatherForm = document.querySelector(".weatherForm");
 const card = document.querySelector(".displayCard");
 const userInput = document.querySelector("#userInput");
